@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    /* background-color: #083b4c; */
+}
+.square-container {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+.square {
+    width: calc(100% / 7 - 30px);
+    height: 100px;
+    list-style: none;
+    margin: 15px;
+    display: inline-block;
+
+    border: 1px solid black;
+}
