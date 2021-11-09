@@ -8,15 +8,26 @@
 
 
 
-// stampare i numeri da 1 a 100 
+// stampare i numeri da 1 a 100 e scritte
 let num;
 const ul = document.querySelector('.lista-numeri');
 
 
-for (let num = 1; num <= 100; num++) {
-    console.log(num);
-    ul.innerHTML += `<li class="square">${num}</li>`;
+for (num = 1; num <= 100; num++) {
+
+    if (num % 3 == 0 && num % 5 == 0) {
+        ul.innerHTML += `<li class="square">${'fizzbuzz'}</li>`;
+    } else if (num % 5 == 0) {
+        ul.innerHTML += `<li class="square">${'buzz'}</li>`;
+    } else if (num % 3 == 0) {
+        ul.innerHTML += `<li class="square">${'fizz'}</li>`;
+    } else {
+        ul.innerHTML += `<li class="square">${num}</li>`;
+    }
+
 }
+
+
 
 
 
