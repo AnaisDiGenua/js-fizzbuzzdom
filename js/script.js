@@ -16,13 +16,13 @@ const ul = document.querySelector('.lista-numeri');
 for (num = 1; num <= 100; num++) {
 
     if (num % 3 == 0 && num % 5 == 0) {
-        ul.innerHTML += `<li class="square">${'fizzbuzz'}</li>`;
+        ul.innerHTML += `<li class="square red">${'fizzbuzz'}</li>`;
     } else if (num % 5 == 0) {
-        ul.innerHTML += `<li class="square">${'buzz'}</li>`;
+        ul.innerHTML += `<li class="square yellow">${'buzz'}</li>`;
     } else if (num % 3 == 0) {
-        ul.innerHTML += `<li class="square">${'fizz'}</li>`;
+        ul.innerHTML += `<li class="square green">${'fizz'}</li>`;
     } else {
-        ul.innerHTML += `<li class="square">${num}</li>`;
+        ul.innerHTML += `<li class="square blue">${num}</li>`;
     }
 
 }
